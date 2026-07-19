@@ -1,16 +1,102 @@
-# fintrack
+# 📱 FinTrack – Student Money Manager
 
-A new Flutter project.
+A Flutter-based mobile application that automatically tracks UPI expenses from SMS notifications, helping students manage budgets, monitor spending, and achieve savings goals.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Features
 
-A few resources to get you started if this is your first Flutter project:
+- 📩 Automatic UPI SMS expense detection
+- 💰 Monthly budget management
+- 🎯 Savings goal tracking
+- 🐷 Virtual Piggy Bank
+- 📊 Expense analytics dashboard
+- 🔔 Budget alert notifications
+- ☁ Firebase Authentication
+- 💾 SQLite local database
+- 🔄 Cloud backup with Firestore
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠 Tech Stack
+
+- Flutter
+- Dart
+- Firebase Authentication
+- Cloud Firestore
+- SQLite
+- Flutter Local Notifications
+- WorkManager
+
+---
+
+## 📸 Screenshots
+
+> Screenshots will be added soon.
+
+---
+
+## 🏗 Architecture
+
+```text
+Flutter UI
+      │
+      ▼
+Business Logic
+      │
+ ┌────┴────┐
+ ▼         ▼
+SQLite   Firebase
+      │
+      ▼
+Notification Service
+```
+
+---
+
+## 📂 Folder Structure
+
+```text
+lib/
+ ├── models/
+ ├── screens/
+ ├── services/
+ ├── widgets/
+ └── main.dart
+```
+
+---
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/bhavya-39/FinTrack-Student-Money-Manager.git
+
+cd FinTrack-Student-Money-Manager
+
+flutter pub get
+
+flutter run
+```
+
+---
+
+## 🔮 Future Enhancements
+
+- AI-powered expense categorization
+- Receipt OCR scanning
+- Spending prediction using Machine Learning
+- Bank statement import
+- PDF report generation
+
+---
+
+## 👨‍💻 Developer
+
+**Bhavya B Nayar**
+
+B.Tech Information Technology Student
+
+---
+
+If you found this project helpful, consider giving it a ⭐ on GitHub.
