@@ -36,9 +36,34 @@ A Flutter-based mobile application that automatically tracks UPI expenses from S
 
 ## 📸 Screenshots
 
-> Screenshots will be added soon.
+## 📸 App Screenshots
 
----
+### Login
+![Login](assets/images/screenshots/Login.jpeg)
+
+### Dashboard
+![Dashboard](assets/images/screenshots/dashboard.jpeg)
+
+### Budget Setup
+![Budget Setup](assets/images/screenshots/budget%20setup.jpeg)
+
+### Add Expense
+![Add Expense](assets/images/screenshots/add%20expense.jpeg)
+
+### Savings Mode
+![Savings Mode](assets/images/screenshots/savings%20mode.jpeg)
+
+### Reports
+![Reports](assets/images/screenshots/reports.jpeg)
+
+### Monthly Report
+![Monthly Report](assets/images/screenshots/monthly%20report.jpeg)
+
+### Create Account
+![Create Account](assets/images/screenshots/create%20account.jpeg)
+
+### Profile
+![Profile](assets/images/screenshots/profile.jpeg)
 
 ## 🏗 Architecture
 
