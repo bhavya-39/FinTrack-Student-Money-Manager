@@ -209,7 +209,7 @@ class _LogoPainter extends CustomPainter {
       text: const TextSpan(
         text: '\/-',
         style: TextStyle(
-          color: AppTheme.skyBlue,
+          color: AppTheme.primaryTeal,
           fontSize: 16,
           fontWeight: FontWeight.bold,
         ),

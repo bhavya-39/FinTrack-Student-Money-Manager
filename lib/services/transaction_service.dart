@@ -17,7 +17,8 @@ class TransactionService {
     DateTime? date,
     String? note,
   }) async {
-    final transaction = TransactionModel(
+    //object creation 
+    final transaction = TransactionModel( 
       id: '', // Firestore will generate this
       userId: _userId,
       title: title,

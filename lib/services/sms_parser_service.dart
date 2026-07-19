@@ -381,7 +381,7 @@ class ParsedExpense {
     required this.confidence,
     required this.hash,
   });
-
+//parsed data to expense model
   Expense toExpense() => Expense(
         hash: hash,
         amount: amount,

@@ -39,7 +39,7 @@ class ExpenseRepository {
   }
 
   // ── One-shot getters ───────────────────────────────────────────────────────
-
+// returns datas
   Future<List<Expense>> getMonthlyExpenses() =>
       _db.getMonthlyExpenses(DateTime.now());
 

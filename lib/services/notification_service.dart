@@ -5,7 +5,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import '../firebase_options.dart';
 
-// ── Workmanager callback (top-level function, required by workmanager) ────────
+// ── Workmanager callback (top-level function, required by workmanager) ────────background execution//
 @pragma('vm:entry-point')
 void callbackDispatcher() {
   Workmanager().executeTask((task, inputData) async {
@@ -42,7 +42,7 @@ Future<void> _runBudgetCheck() async {
     final budget = (budgetDoc.data()?['amount'] as num?)?.toDouble();
     if (budget == null || budget <= 0) return;
 
-    // Fetch current month expenses
+    // Fetch current month expenses  
     final now = DateTime.now();
     final start = DateTime(now.year, now.month, 1);
     final end = DateTime(now.year, now.month + 1, 0, 23, 59, 59);
@@ -96,6 +96,7 @@ class NotificationService {
   static const budgetCheckTask = 'budgetCheckTask';
   static const _channelId = 'fintrack_budget_alerts';
   static const _channelName = 'Budget Alerts';
+  //notify handler, initial fn
 
   static final FlutterLocalNotificationsPlugin _plugin =
       FlutterLocalNotificationsPlugin();

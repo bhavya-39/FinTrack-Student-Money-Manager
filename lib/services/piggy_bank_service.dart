@@ -7,7 +7,7 @@ import '../models/goal_model.dart';
 enum SavingMode { roundoff, fixed, percent }
 
 /// Multi-mode Piggy Bank Service
-/// Supports: Round-off, Fixed amount, and Percentage saving per transaction.
+/// Supports: Round-off, Fixed amount, and Percentage saving per transaction. 
 class PiggyBankService {
   PiggyBankService._();
   static final PiggyBankService instance = PiggyBankService._();
@@ -30,6 +30,7 @@ class PiggyBankService {
   /// Load settings from database. Call once at startup.
   Future<void> loadSettings() async {
     final settings = await LocalDatabase.instance.getPiggySettings();
+    //string to enum
     _mode = _parseMode(settings['mode'] as String? ?? 'roundoff');
     _percentage = (settings['percentage'] as num?)?.toDouble() ?? 5.0;
     _fixedAmount = (settings['fixed_amount'] as num?)?.toDouble() ?? 10.0;
@@ -64,7 +65,7 @@ class PiggyBankService {
   }) async {
     final saved = _calculateSaving(expenseAmount);
     if (saved <= 0) return 0;
-
+//piggy bank table insert
     await LocalDatabase.instance.insertSavings(PiggyBankEntry(
       amount: saved,
       date: DateTime.now(),
@@ -78,7 +79,7 @@ class PiggyBankService {
       if (goal.status == 'Active' && remaining > 0) {
         double needed = goal.targetAmount - goal.savedAmount;
         double allocate = 0;
-        
+      
         if (remaining >= needed) {
           allocate = needed;
           goal.savedAmount = goal.targetAmount;
@@ -168,7 +169,7 @@ class PiggyBankService {
     final end = DateTime(now.year, now.month + 1, 0, 23, 59, 59);
     return LocalDatabase.instance.getSavingsCountBetween(start, end);
   }
-
+//string to enum
   SavingMode _parseMode(String mode) {
     switch (mode) {
       case 'fixed':
@@ -179,7 +180,7 @@ class PiggyBankService {
         return SavingMode.roundoff;
     }
   }
-
+//enum to string
   String _modeToString(SavingMode mode) {
     switch (mode) {
       case SavingMode.roundoff:
