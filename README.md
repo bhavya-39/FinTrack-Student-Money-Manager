@@ -1,4 +1,8 @@
 # 📱 FinTrack – Student Money Manager
+![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)
+![Dart](https://img.shields.io/badge/Dart-3.x-0175C2?logo=dart)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase)
+![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite)
 
 A Flutter-based mobile application that automatically tracks UPI expenses from SMS notifications, helping students manage budgets, monitor spending, and achieve savings goals.
 
