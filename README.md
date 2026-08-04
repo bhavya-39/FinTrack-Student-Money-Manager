@@ -123,6 +123,8 @@ flutter run
 ## 👨‍💻 Developer
 
 **Bhavya B Nayar**
+**Aparna Roy**
+**Avani Krishna Ambadi A**
 
 B.Tech Information Technology Student
 
