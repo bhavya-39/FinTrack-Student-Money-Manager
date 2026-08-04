@@ -120,7 +120,8 @@ flutter run
 
 ---
 
-## 👨‍💻 Developer
+## 👨‍💻 Developers
+
 
 **Bhavya B Nayar**
 **Aparna Roy**
